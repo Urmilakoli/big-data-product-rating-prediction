@@ -1,0 +1,9 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS amazon_reviews (
+  product_id STRING,
+  user_id STRING,
+  rating INT,
+  review_text STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;

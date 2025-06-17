@@ -1,0 +1,10 @@
+version: '3'
+services:
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop2.7.4-java8
+    ports:
+      - 9870:9870
+  spark:
+    image: bitnami/spark:latest
+    ports:
+      - 8080:8080
